@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $Sal = prompt("Qual é o seu salário")
+
+
+        document.write("<table border = '1'>")
+        document.write("<tr>")
+        document.write("<td>", "Salário Básico")
+        document.write("</td>")
+        document.write("<td>", "Aliquota")
+        document.write("</td>")
+        document.write("<td>", "Valor Descontado")
+        document.write("</td>")
+        document.write("<td>", "Salário Real")
+        document.write("</td>")
+
+        document.write("</tr>")
+
+        if ($Sal < 1100.01) {
+            $porc = 0.07
+            $ValorD = $Sal * $porc
+            $SalR = $Sal - $ValorD
+            document.write("<tr>")
+            document.write("<td>", $Sal)
+            document.write("</td>")
+            document.write("<td>", $porc)
+            document.write("</td>")
+            document.write("<td>", $ValorD)
+            document.write("</td>")
+            document.write("<td>", $SalR)
+            document.write("</td>")
+        }
+        if ($Sal > 1100 || $Sal < 2203.49) {
+            $porc = 0.09
+            $ValorD = $Sal * $porc
+            $SalR = $Sal - $ValorD
+            document.write("<tr>")
+            document.write("<td>", $Sal)
+            document.write("</td>")
+            document.write("<td>", $porc)
+            document.write("</td>")
+            document.write("<td>", $ValorD)
+            document.write("</td>")
+            document.write("<td>", $SalR)
+            document.write("</td>")
+        }
+        if ($Sal > 2203.48 || $Sal < 3305.23) {
+            $porc = 0.12
+            $ValorD = $Sal * $porc
+            $SalR = $Sal - $ValorD
+            document.write("<tr>")
+            document.write("<td>", $Sal)
+            document.write("</td>")
+            document.write("<td>", $porc)
+            document.write("</td>")
+            document.write("<td>", $ValorD)
+            document.write("</td>")
+            document.write("<td>", $SalR)
+            document.write("</td>")
+        }
+        if ($Sal > 3305.23 || $Sal < 6433.58) {
+            $porc = 0.14
+            $ValorD = $Sal * $porc
+            $SalR = $Sal - $ValorD
+            document.write("<tr>")
+            document.write("<td>", $Sal)
+            document.write("</td>")
+            document.write("<td>", $porc)
+            document.write("</td>")
+            document.write("<td>", $ValorD)
+            document.write("</td>")
+            document.write("<td>", $SalR)
+            document.write("</td>")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
